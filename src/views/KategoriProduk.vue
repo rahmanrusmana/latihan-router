@@ -1,5 +1,6 @@
 <template>
     <h1>Produk</h1>
+    <div ></div>
     <div class="flex-container">
         <div v-for="produk in state" :key="produk.id" class="card">
             <router-link class="container" :to="{ name: 'Detail', params: { id_produk: produk.id} }">
@@ -14,13 +15,12 @@
   import { produk } from '@/assets/Produk';
   
   export default {
-    props:['kategoriId']{
+    props:['kategoriId'],
         setup(props) {
             const filteredProduk = computed(() => {
-                return produk["produk"].filter((item)
-                => item.kategori_id == props.kategoriId)
+                return produk["produk"].filter((item) => item.kategori_id == props.kategoriId)
             });
-        };
+        }
     }
     setup(props, context)
     {
@@ -34,7 +34,7 @@
             state
         }
     }
-  }
+  
   </script>
     <style scoped>
   .flex-container {

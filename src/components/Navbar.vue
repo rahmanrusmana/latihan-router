@@ -5,6 +5,8 @@
       <li><router-link :class="{ active: rl_3}" :to="{ name: 'About'}">About</router-link></li>
       <li><router-link :class="{ active: rl_4}" :to="{ name: 'Produk'}">Produk</router-link></li>
       <li><router-link :class="{ active: rl_5}" :to="{ name: 'Kategori'}">Kategori</router-link></li>
+      <li style="float: right;"><router-link :to="{ name: 'Login'}">Login</router-link></li>
+      <li style="float: right;"><router-link :to="{ name: 'Login'}">Daftar</router-link></li>
   </ul>
 </template>
 
@@ -97,5 +99,7 @@ li a:hover:not(.active) {
 .active{
   background-color: #4CAF50;
 }
-
+a{
+  
+}
 </style>
