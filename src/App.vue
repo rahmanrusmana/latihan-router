@@ -1,9 +1,12 @@
 <template>
+  <!-- codingan pertama -->
   <Navbar :id-menu="idMenu" :key="idMenu" />
   <router-view @id-menu="setMenu($event)" />
+
 </template>
 
 <script>
+// codingan pertama
  import Navbar from '@/components/Navbar.vue'
  import { ref } from 'vue'
 
@@ -28,10 +31,20 @@
 </script>
 
 <style>
+
 #app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+ 
+}
+
+/* codingan pertama */
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
+} */
 </style>

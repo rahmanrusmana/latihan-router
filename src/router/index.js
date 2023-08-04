@@ -6,10 +6,11 @@ import Produk from "@/views/Produk.vue";
 import Detail from "@/views/Detail.vue";
 import Kategori from "@/views/Kategori.vue";
 import DetailKategori from "@/views/DetailKategori.vue";
-
 import NotFound from "@/views/NotFound.vue";
 import Login from "@/views/Login.vue"
 import { users } from "../assets/User";
+import Counter from "@/views/Counter.vue";
+import Todo from "@/views/todo.vue";
 
 const routes = [ 
   {
@@ -68,6 +69,16 @@ const routes = [
     component: Login,
     props: true,
   },
+  {
+    path: "/counter",
+    name: "Counter",
+    component: Counter,
+   },
+   {
+    path: "/todo",
+    name: "Todo",
+    component: Todo,
+   },
 ]
 
 const router = createRouter({

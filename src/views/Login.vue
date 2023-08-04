@@ -44,7 +44,7 @@ export default {
 /* body{
     background-color: #080710;
 } */
-    .background{
+    /* .background{
     width: 430px;
     height: 300px;
     position: absolute;
@@ -133,7 +133,7 @@ button{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 </style>
     
